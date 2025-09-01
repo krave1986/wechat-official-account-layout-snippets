@@ -1,0 +1,67 @@
+<!-- 确保 container 的 overflow:auto 生效 -->
+<div class="container" style="width: 100%; box-sizing: border-box; overflow: auto;">
+    <!-- 在 table 标签上同时使用 width 属性和 style -->
+    <table width="600" class="table"
+        style="table-layout: fixed; width: 600px; min-width: 600px; border-collapse: collapse; word-break: keep-all;">
+        <!-- 使用 width 属性而不是 style 来定义列宽，对抗微信过滤 -->
+        <colgroup>
+            <col width="120">
+            <col width="100">
+            <col width="100">
+            <col width="100">
+            <col width="80">
+            <col width="100">
+        </colgroup>
+        <thead>
+            <tr>
+                <!-- th 中的空格是微信加的，不用管它，保留 white-space: nowrap -->
+                <th
+                    style="white-space: nowrap; padding: 8px; border: 1px solid #ddd; text-align: left; background-color: #f5f5f5;">
+                    <section><span leaf="">银行</span></section>
+                </th>
+                <th
+                    style="white-space: nowrap; padding: 8px; border: 1px solid #ddd; text-align: left; background-color: #f5f5f5;">
+                    <section><span leaf="">还款金额</span></section>
+                </th>
+                <th
+                    style="white-space: nowrap; padding: 8px; border: 1px solid #ddd; text-align: left; background-color: #f5f5f5;">
+                    <section><span leaf="">立减金</span></section>
+                </th>
+                <th
+                    style="white-space: nowrap; padding: 8px; border: 1px solid #ddd; text-align: left; background-color: #f5f5f5;">
+                    <section><span leaf="">立减占比</span></section>
+                </th>
+                <th
+                    style="white-space: nowrap; padding: 8px; border: 1px solid #ddd; text-align: left; background-color: #f5f5f5;">
+                    <section><span leaf="">次数</span></section>
+                </th>
+                <th
+                    style="white-space: nowrap; padding: 8px; border: 1px solid #ddd; text-align: left; background-color: #f5f5f5;">
+                    <section><span leaf="">时间</span></section>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="white-space: nowrap; padding: 8px; border: 1px solid #ddd;">
+                    <section><span leaf="">浦发银行</span></section>
+                </td>
+                <td style="white-space: nowrap; padding: 8px; border: 1px solid #ddd;">
+                    <section><span leaf="">￥2000</span></section>
+                </td>
+                <td style="white-space: nowrap; padding: 8px; border: 1px solid #ddd;">
+                    <section><span leaf="">￥3.2</span></section>
+                </td>
+                <td style="white-space: nowrap; padding: 8px; border: 1px solid #ddd;">
+                    <section><span leaf="">0.16%</span></section>
+                </td>
+                <td style="white-space: nowrap; padding: 8px; border: 1px solid #ddd;">
+                    <section><span leaf="">-</span></section>
+                </td>
+                <td style="white-space: nowrap; padding: 8px; border: 1px solid #ddd;">
+                    <section><span leaf="">-</span></section>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
